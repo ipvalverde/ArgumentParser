@@ -272,7 +272,7 @@ namespace IPValverde.ArgumentParser.Tests
                                         "-o", "output filename.txt",
                                         "-f", "hh:mm:ss dd/MM/yyyy",
                                         "-timeout", "120",
-                                        "-d", "21/04/2015 20:50"
+                                        "-d", "11/04/2015 20:50"
                                     });
 
             // This property should be null, as it's not binded
@@ -286,7 +286,7 @@ namespace IPValverde.ArgumentParser.Tests
             Assert.AreEqual("output filename.txt", parametersObject.OutputName);
             Assert.AreEqual("hh:mm:ss dd/MM/yyyy", parametersObject.Format);
             Assert.AreEqual(120, parametersObject.Timeout);
-            Assert.AreEqual(DateTime.Parse("21/04/2015 20:50"), parametersObject.BaseDateTime);
+            Assert.AreEqual(DateTime.Parse("11/04/2015 20:50"), parametersObject.BaseDateTime);
 
             // Assert devault value is set
             Assert.AreEqual("contact@mydomain.com", parametersObject.EmailFrom);
