@@ -1,0 +1,5 @@
+C:\Users\Israel\Documents\Visual Studio 2013\Projects\ArgumentParser\ArgumentParser\bin\Debug\ArgumentParser.dll
+C:\Users\Israel\Documents\Visual Studio 2013\Projects\ArgumentParser\ArgumentParser\bin\Debug\ArgumentParser.pdb
+C:\Users\Israel\Documents\Visual Studio 2013\Projects\ArgumentParser\ArgumentParser\obj\Debug\ArgumentParser.csprojResolveAssemblyReference.cache
+C:\Users\Israel\Documents\Visual Studio 2013\Projects\ArgumentParser\ArgumentParser\obj\Debug\ArgumentParser.dll
+C:\Users\Israel\Documents\Visual Studio 2013\Projects\ArgumentParser\ArgumentParser\obj\Debug\ArgumentParser.pdb
