@@ -10,7 +10,8 @@ namespace IPValverde.ArgumentParser.Exceptions
     /// Exception is thrown when a a duplicate argument identifier is found.
     /// An argument identifier can be its name or alias.
     /// </summary>
-    public class DuplicateArgumentException : Exception, ISerializable
+    [Serializable]
+    public class DuplicateArgumentException : Exception
     {
         /// <summary>
         /// The argument name or alias which is  duplicated.

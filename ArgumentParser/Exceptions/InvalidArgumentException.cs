@@ -8,7 +8,8 @@ namespace IPValverde.ArgumentParser.Exceptions
     /// <summary>
     /// Thrown when an invalid argument is found.
     /// </summary>
-    public class InvalidArgumentException : Exception, ISerializable
+    [Serializable]
+    public class InvalidArgumentException : Exception
     {
         /// <summary>
         /// The invalid argument name.

@@ -8,6 +8,7 @@ namespace IPValverde.ArgumentParser.Exceptions
     /// <summary>
     /// Thrown when an argument with required attribute is not found
     /// </summary>
+    [Serializable]
     public class RequiredArgumentMissingException : Exception
     {
         /// <summary>

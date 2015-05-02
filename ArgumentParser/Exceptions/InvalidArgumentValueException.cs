@@ -9,7 +9,8 @@ namespace IPValverde.ArgumentParser.Exceptions
     /// <summary>
     /// Indicates that an argument has in invalid value.
     /// </summary>
-    public class InvalidArgumentValueException : Exception, ISerializable
+    [Serializable]
+    public class InvalidArgumentValueException : Exception
     {
         /// <summary>
         /// The name of the argument with invalid value.
