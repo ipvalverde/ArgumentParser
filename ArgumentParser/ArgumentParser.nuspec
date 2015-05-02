@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ArgumentParser</id>
+    <version>$version$</version>
+    <title>Argument parser</title>
+    <authors>Israel Valverde</authors>
+    <owners>Israel Valverde</owners>
+    <licenseUrl>https://github.com/ipvalverde/ArgumentParser/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/ipvalverde/ArgumentParser</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A simple utility to help you parsing string array arguments into objects. With this class you can save the time spent on validations created for console applications. The arguments are bound to class properties, the binding is done using attributes over the properties, those attributes let you define required arguments, default value for properties and RegEx validation for argument value.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright &#x00A9; Israel Valverde.  All rights reserved.</copyright>
+    <tags>console-application arguments argument parser</tags>
+  </metadata>
+  <files>
+	<file src="ArgumentParser\bin\Release\ArgumentParser.dll" target="lib\net40\" />
+  </files>
+</package>
