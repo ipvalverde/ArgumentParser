@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>ArgumentParser</id>
+    <id>IPValverde.ArgumentParser</id>
     <version>$version$</version>
     <title>Argument parser</title>
     <authors>Israel Valverde</authors>
@@ -15,6 +15,6 @@
     <tags>console-application arguments argument parser</tags>
   </metadata>
   <files>
-	<file src="ArgumentParser\bin\Release\ArgumentParser.dll" target="lib\net40\" />
+	<file src="bin\Release\ArgumentParser.dll" target="lib\net40\" />
   </files>
 </package>
