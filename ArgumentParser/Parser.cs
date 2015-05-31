@@ -15,7 +15,7 @@ namespace IPValverde.ArgumentParser
         /// <typeparam name="T">A class type containing properties with Argument attribute.</typeparam>
         /// <param name="arguments">The arguments and it's values, just like they are receveid by console application args</param>
         /// <returns>And instance of T with populated properties values from arguments</returns>
-        public static T ParseArgumets<T>(params string[] arguments)
+        public static T ParseArguments<T>(params string[] arguments)
             where T : class
         {
             var propertyInfoArgumentAttributeList = new List<PropertyInfoArgumentAttribute>();
