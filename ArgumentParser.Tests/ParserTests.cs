@@ -24,7 +24,7 @@ namespace IPValverde.ArgumentParser.Tests
         {
             try
             {
-                var parsedObject = Parser.ParseArgumets<DuplicateArgumentName>();
+                var parsedObject = Parser.ParseArguments<DuplicateArgumentName>();
             }
             catch(DuplicateArgumentException ex)
             {
@@ -50,7 +50,7 @@ namespace IPValverde.ArgumentParser.Tests
         {
             try
             {
-                var parsedObject = Parser.ParseArgumets<DuplicateArgumentAlias>();
+                var parsedObject = Parser.ParseArguments<DuplicateArgumentAlias>();
             }
             catch(DuplicateArgumentException ex)
             {
@@ -75,7 +75,7 @@ namespace IPValverde.ArgumentParser.Tests
         {
             try
             {
-                var parsedObject = Parser.ParseArgumets<DuplicatedArgumentIdentifier>();
+                var parsedObject = Parser.ParseArguments<DuplicatedArgumentIdentifier>();
             }
             catch(DuplicateArgumentException ex)
             {
@@ -111,7 +111,7 @@ namespace IPValverde.ArgumentParser.Tests
         {
             try
             {
-                var paramObj = Parser.ParseArgumets<InvalidArgumentTestClass>(
+                var paramObj = Parser.ParseArguments<InvalidArgumentTestClass>(
                     "-d", "28",
                     "-name");
             }
@@ -130,7 +130,7 @@ namespace IPValverde.ArgumentParser.Tests
         {
             try
             {
-                var paramObj = Parser.ParseArgumets<InvalidArgumentTestClass>(
+                var paramObj = Parser.ParseArguments<InvalidArgumentTestClass>(
                     "-d", "28",
                     "-name", string.Empty);
             }
@@ -149,7 +149,7 @@ namespace IPValverde.ArgumentParser.Tests
         {
             try
             {
-                var paramObj = Parser.ParseArgumets<InvalidArgumentTestClass>(
+                var paramObj = Parser.ParseArguments<InvalidArgumentTestClass>(
                     "-d", "-28",
                     "-name", "John");
             }
@@ -168,7 +168,7 @@ namespace IPValverde.ArgumentParser.Tests
         {
             try
             {
-                var paramObj = Parser.ParseArgumets<InvalidArgumentTestClass>(
+                var paramObj = Parser.ParseArguments<InvalidArgumentTestClass>(
                     "-age", "NaN",
                     "-name", "John");
             }
@@ -191,7 +191,7 @@ namespace IPValverde.ArgumentParser.Tests
         {
             try
             {
-                var paramObj = Parser.ParseArgumets<InvalidArgumentTestClass>(
+                var paramObj = Parser.ParseArguments<InvalidArgumentTestClass>(
                     "-d", "28",
                     "-name", "John",
                     "-lastName", "Locke");
@@ -210,7 +210,7 @@ namespace IPValverde.ArgumentParser.Tests
         {
             try
             {
-                var paramObj = Parser.ParseArgumets<InvalidArgumentTestClass>(
+                var paramObj = Parser.ParseArguments<InvalidArgumentTestClass>(
                     "-d", "11",
                     "-age", "25");
             }
@@ -262,7 +262,7 @@ namespace IPValverde.ArgumentParser.Tests
         [TestMethod]
         public void ParseArguments_ValidArguments()
         {
-            var parametersObject = Parser.ParseArgumets<Parameters>(new []
+            var parametersObject = Parser.ParseArguments<Parameters>(new []
                                     {
                                         // This argument is binded to a boolean property, so
                                         // there is no value associated to it, it's existence
